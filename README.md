@@ -42,6 +42,27 @@ sudo usermod -aG docker fabric
 ``` sh
 curl -sSL http://bit.ly/2ysbOFE | bash -s
 ```
+
+- OR install a specific version
+``` sh
+curl -sSL http://bit.ly/2ysbOFE | bash -s -- 1.4.1 1.4.1 0.4.15
+```
+
 ## Errors faced : 
 - if you get permission denied error , become a super user `sudo su` then again try above cmd
 
+- If done correctly :
+
+![image](https://github.com/KRIISHSHARMA/hyperledger-fabric-installation/assets/86760658/a5d87571-b4ff-4e94-8484-d17463dda684)
+
+# Testing the fabric Network
+
+Open the fabric-samples and go to the first-network.
+``` sh
+cd fabric-samples/first-network
+```
+- To test it, run the byfn.sh . It is a test script, 
+- it first set up the network with 2 organizations org1 and org2 with 2 peers each and an orderer .
+``` sh
+./byfn.sh up
+```
