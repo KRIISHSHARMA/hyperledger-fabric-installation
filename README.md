@@ -33,3 +33,15 @@ sudo usermod -aG docker fabric
 
 - Check Docker and Docker Compose versions / if installed properly
   
+![image](https://github.com/KRIISHSHARMA/hyperledger-fabric-installation/assets/86760658/c31b4447-25cd-4fc4-8a0b-23b3c4a7d9b6)
+
+# Installing Samples, Binaries and Docker Images
+
+- download the latest production release.
+  
+``` sh
+curl -sSL http://bit.ly/2ysbOFE | bash -s
+```
+## Errors faced : 
+- if you get permission denied error , become a super user `sudo su` then again try above cmd
+
