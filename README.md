@@ -57,12 +57,22 @@ curl -sSL http://bit.ly/2ysbOFE | bash -s -- 1.4.1 1.4.1 0.4.15
 
 # Testing the fabric Network
 
-Open the fabric-samples and go to the first-network.
+Open the fabric-samples and go to the test-network.
 ``` sh
-cd fabric-samples/first-network
+cd fabric-samples/test-network
 ```
-- To test it, run the byfn.sh . It is a test script, 
-- it first set up the network with 2 organizations org1 and org2 with 2 peers each and an orderer .
+- In this directory, you can find an annotated script, network.sh, that stands up a Fabric network using the Docker images on your local machine
+- From inside the test-network directory, run the following command to remove any containers or artifacts from any previous runs:
 ``` sh
-./byfn.sh up
+./network.sh down
 ```
+You can then bring up the network by issuing the following command. You will experience problems if you try to run the script from another directory:
+``` sh
+./network.sh up
+```
+- OR you can also bring up the network with Certificate Authorities.
+``` sh
+./network.sh up -ca
+```
+
+![image](https://github.com/KRIISHSHARMA/hyperledger-fabric-installation/assets/86760658/5d2797cf-4d68-4b02-9b1d-91ec4d11cac6)
