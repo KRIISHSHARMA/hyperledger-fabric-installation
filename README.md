@@ -76,3 +76,6 @@ You can then bring up the network by issuing the following command. You will exp
 ```
 
 ![image](https://github.com/KRIISHSHARMA/hyperledger-fabric-installation/assets/86760658/5d2797cf-4d68-4b02-9b1d-91ec4d11cac6)
+
+# Creating a Channel 
+- Error in creating a channel (have to troubleshoot)
