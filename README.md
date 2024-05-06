@@ -80,6 +80,10 @@ After 5 attempts, peer0.org1 has failed to join channel 'mychannel'
 ``` sh
 ./network.sh createChannel
 ```
+
+# Deploying a smart contract to a channel
+
+
 - If done correctly , you will see following message in logs :
 
 ![image](https://github.com/KRIISHSHARMA/hyperledger-fabric-installation/assets/86760658/abcea161-beca-4fab-ae80-f4bfa574b7b8)
